@@ -1,0 +1,65 @@
+/*
+ * Copyright 2022, Oak Ridge National Laboratory.
+ * MGARD-X: MultiGrid Adaptive Reduction of Data Portable across GPUs and CPUs
+ * Author: Jieyang Chen (chenj3@ornl.gov)
+ * Date: March 17, 2022
+ */
+
+#ifndef MGARD_X_CONFIG_H
+#define MGARD_X_CONFIG_H
+
+#if '@MGARD_ENABLE_SERIAL@' == 'ON'
+#define MGARD_ENABLE_SERIAL 1
+#else
+#define MGARD_ENABLE_SERIAL 0   
+#endif
+
+#if '@MGARD_ENABLE_OPENMP@' == 'ON'
+#define MGARD_ENABLE_OPENMP 1
+#else
+#define MGARD_ENABLE_OPENMP 0   
+#endif
+
+#if '@MGARD_ENABLE_CUDA@' == 'ON'
+#define MGARD_ENABLE_CUDA 1
+#else
+#define MGARD_ENABLE_CUDA 0   
+#endif
+
+#if '@MGARD_ENABLE_HIP@' == 'ON'
+#define MGARD_ENABLE_HIP 1
+#else
+#define MGARD_ENABLE_HIP 0   
+#endif
+
+#if '@MGARD_ENABLE_SYCL@' == 'ON'
+#define MGARD_ENABLE_SYCL 1
+#else
+#define MGARD_ENABLE_SYCL 0   
+#endif
+
+#if '@MGARD_ENABLE_LEGACY_CUDA@' == 'ON'
+#define MGARD_ENABLE_LEGACY_CUDA 1
+#else
+#define MGARD_ENABLE_LEGACY_CUDA 0   
+#endif
+
+#if '@MGARD_ENABLE_MULTI_DEVICE@' == 'ON'
+#define MGARD_ENABLE_MULTI_DEVICE 1
+#else
+#define MGARD_ENABLE_MULTI_DEVICE 0   
+#endif
+
+#if '@MGARD_ENABLE_COORDINATE_NORMALIZATION@' == 'ON'
+#define MGARD_ENABLE_COORDINATE_NORMALIZATION 1
+#else
+#define MGARD_ENABLE_COORDINATE_NORMALIZATION 0   
+#endif
+
+#if '@MGARD_ENABLE_AUTO_TUNING@' == 'ON'
+#define MGARD_ENABLE_AUTO_TUNING 1
+#else
+#define MGARD_ENABLE_AUTO_TUNING 0   
+#endif
+
+#endif

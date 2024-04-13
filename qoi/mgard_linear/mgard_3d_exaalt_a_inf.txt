@@ -1,0 +1,65 @@
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e+00
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------
+[32m[info][0m Compression time: 73.5725
+[32m[info][0m Compression throughput: 0.0135643 GB/s.
+[32m[info][0m Compression ratio: 3.02498
+[32m[info][0m Decompression time: 78.4105
+[32m[info][0m Decompression throughput: 0.0127274 GB/s.
+Max error 0.153491 range 117.211
+Relative : 0.00130953
+RMSE: 0.0164234
+Max Error: 0.153491
+Avg Distance between Original and Decompressed: 0.00106916
+Qoi liner error0.306982
+********** Successful **********
+[32m[info][0m Absoluate L_inf error: 1.534910e-01 ([32mSatisified[0m)
+[32m[info][0m MSE: 2.697284e-04
+[32m[info][0m PSNR: 77.0701
+
+
+
+
+73.5725, 
+78.4105, 
+6.95256e-310, 
+6.93684e-310, 
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e-02
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e-04
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------

@@ -1,0 +1,61 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /gpfs/alpine/proj-shared/csc143/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10d7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10d7b.dir/build.make CMakeFiles/cmTC_10d7b.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/csc143/proj-shared/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10d7b.dir/src.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIC  -o CMakeFiles/cmTC_10d7b.dir/src.c.o -c /gpfs/alpine/proj-shared/csc143/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_10d7b
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.2-jwqghrfxvfhuozlioasit4bvncwg5yff/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10d7b.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -fPIC  CMakeFiles/cmTC_10d7b.dir/src.c.o -o cmTC_10d7b 
+CMakeFiles/cmTC_10d7b.dir/src.c.o: In function `main':
+src.c:(.text+0x64): undefined reference to `pthread_create'
+src.c:(.text+0x74): undefined reference to `pthread_detach'
+src.c:(.text+0x84): undefined reference to `pthread_cancel'
+src.c:(.text+0x98): undefined reference to `pthread_join'
+/usr/bin/ld: link errors found, deleting executable `cmTC_10d7b'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_10d7b.dir/build.make:99: cmTC_10d7b] Error 1
+gmake[1]: Leaving directory '/gpfs/alpine/csc143/proj-shared/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_10d7b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /gpfs/alpine/proj-shared/csc143/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d00e1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d00e1.dir/build.make CMakeFiles/cmTC_d00e1.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/csc143/proj-shared/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d00e1.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_d00e1.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.2-jwqghrfxvfhuozlioasit4bvncwg5yff/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d00e1
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.2-jwqghrfxvfhuozlioasit4bvncwg5yff/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d00e1.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_d00e1.dir/CheckFunctionExists.c.o -o cmTC_d00e1  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_d00e1.dir/build.make:99: cmTC_d00e1] Error 1
+gmake[1]: Leaving directory '/gpfs/alpine/csc143/proj-shared/zq53/mgard_new/adios_more/IO_test/hdf5/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d00e1/fast] Error 2
+
+
+

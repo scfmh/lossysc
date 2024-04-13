@@ -1,0 +1,111 @@
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e+00
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------
+[32m[info][0m Compression time: 67.2927
+[32m[info][0m Compression throughput: 0.0148302 GB/s.
+[32m[info][0m Compression ratio: 6.31176
+[32m[info][0m Decompression time: 66.1596
+[32m[info][0m Decompression throughput: 0.0150841 GB/s.
+Max error 0.305584 range 117.211
+Relative : 0.00260714
+RMSE: 0.0330046
+Max Error: 0.305584
+Avg Distance between Original and Decompressed: 0.00117233
+Qoi liner error0.611168
+********** Successful **********
+[32m[info][0m Absoluate L_inf error: 3.055840e-01 ([32mSatisified[0m)
+[32m[info][0m MSE: 1.089302e-03
+[32m[info][0m PSNR: 71.0079
+
+
+
+
+67.2927, 
+66.1596, 
+6.95288e-310, 
+6.91645e-310, 
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e-02
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------
+[32m[info][0m Compression time: 88.2154
+[32m[info][0m Compression throughput: 0.0113128 GB/s.
+[32m[info][0m Compression ratio: 1.54555
+[32m[info][0m Decompression time: 74.3508
+[32m[info][0m Decompression throughput: 0.0134223 GB/s.
+Max error 0.00298381 range 117.211
+Relative : 2.54568e-05
+RMSE: 0.000339434
+Max Error: 0.00298381
+Avg Distance between Original and Decompressed: 1.86547e-05
+Qoi liner error0.00596762
+********** Successful **********
+[32m[info][0m Absoluate L_inf error: 2.983809e-03 ([32mSatisified[0m)
+[32m[info][0m MSE: 1.152158e-07
+[32m[info][0m PSNR: 110.764
+
+
+
+
+88.2154, 
+74.3508, 
+6.9533e-310, 
+6.92654e-310, 
+[32m[info][0m original data: /home/forensics/qzl/GCLDLWP_all/dataset2-2338x106711.x.f32.dat
+[32m[info][0m compressed data: aaa
+[32m[info][0m data type: Single precision
+[32m[info][0m error bound mode: Absolute
+[32m[info][0m error bound: 5.860500e-04
+[32m[info][0m s: inf
+[32m[info][0m lossless: Huffman + Zstd
+[32m[info][0m device type: SERIAL
+>>> use_compression: 1
+>>> accumulate_data: 1
+>>> prefetch: 0
+>>> comm_size: 1
+[32m[info][0m Data per rank: 0.997961 GB
+----------
+[32m[info][0m Compression time: 100.121
+[32m[info][0m Compression throughput: 0.00996754 GB/s.
+[32m[info][0m Compression ratio: 1.01635
+[32m[info][0m Decompression time: 76.6179
+[32m[info][0m Decompression throughput: 0.0130252 GB/s.
+Max error 5.72205e-05 range 117.211
+Relative : 4.88185e-07
+RMSE: 5.76368e-06
+Max Error: 5.72205e-05
+Avg Distance between Original and Decompressed: 5.76964e-07
+Qoi liner error0.000114441
+********** Successful **********
+[32m[info][0m Absoluate L_inf error: 5.722046e-05 ([32mSatisified[0m)
+[32m[info][0m MSE: 3.321998e-11
+[32m[info][0m PSNR: 146.165
+
+
+
+
+100.121, 
+76.6179, 
+6.95266e-310, 
+6.91393e-310, 
