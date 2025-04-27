@@ -16,5 +16,3 @@ def extract_info(filename):
     print(name, d1, d2, d3, err, d1_s, d2_s, d3_s)
     return name, d1, d2, d3, err, d1_s, d2_s, d3_s
 
-#extract_info("GCLDLWP_26_1800_3600_0.1_13_900_1800.txt")
-# extract_info("GCLDLWP_26_1800_3600_0.1_6400_stat.txt")

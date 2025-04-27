@@ -1,4 +1,4 @@
-epository for Testing Lossy Compressors on Different HPC Systems
+Repository for Testing Lossy Compressors on Different HPC Systems
 
 This repository is set up for testing various lossy compressors under different high-performance computing (HPC) systems. Before testing, the following dependency libraries and their versions must be downloaded and used:
 
